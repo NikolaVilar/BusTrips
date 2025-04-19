@@ -34,7 +34,8 @@ public class Main {
             return;
         }
 
-//        LocalTime now = LocalTime.of(12, 0);
+        // for fixed time of 12:00
+        // LocalTime now = LocalTime.of(12, 0);
         LocalTime now = LocalTime.now(); // Use actual system time
 
         BusService service = new BusService("data/");
