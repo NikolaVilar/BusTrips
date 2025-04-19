@@ -70,8 +70,6 @@ The program checks the following:
 - That the time format argument is either `relative` or `absolute`
 - Invalid input triggers a helpful message and optionally lists valid stop IDs.
 
-## Project Structure
-
 ## License
 
-This project is intended for educational and demonstration purposes.
+This project is intended for demonstration purposes.
