@@ -40,10 +40,11 @@ java -cp out bustrips.Main 2 5 relative
 ```
 
 ### Example output:
-`Postajalisce AL Masjid Al-nabawi (Clock Roundabout)
+```
+Postajalisce AL Masjid Al-nabawi (Clock Roundabout)
 101: 10min, 18min, 25min, 30min, 38min
 106: 12min, 20min, 32min, 45min
-`
+```
 
 ### Used GTFS Files
 
