@@ -1,6 +1,5 @@
 package bustrips;
 
-import bustrips.data.GtfsReader;
 import bustrips.logic.BusService;
 import bustrips.model.BusArrival;
 
@@ -10,7 +9,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception{
         if (args.length != 3) {
-            System.out.println("Wrong input!\nCorrect input: busTrips <stop_id> <max_buses> <relative|absolute>");
+            System.out.println("Wrong input!\nCorrect input: busTrips.Main <stop_id> <max_buses> <relative|absolute>");
             return;
         }
 
@@ -34,8 +33,9 @@ public class Main {
             System.out.println("Wrong input!\n<relative|absolute> must be either 'relative' or 'absolute'.");
             return;
         }
-        LocalTime now = LocalTime.of(12, 0);
-//        LocalTime now = LocalTime.now(); // Use actual system time
+
+//        LocalTime now = LocalTime.of(12, 0);
+        LocalTime now = LocalTime.now(); // Use actual system time
 
         BusService service = new BusService("data/");
         if (!service.isValidStop(stopId)) {
